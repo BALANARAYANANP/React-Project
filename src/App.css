@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+   font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #2f3640;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+  width: 350px;
+  aspect-ratio: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #70e6f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityInput{
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+
+}
+.icon{
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.temp,
+.Location,
+.Country{
+  margin-top: 5px;
+  font-size: 35px;
+  color: #333;
+  text-transform: uppercase;
+}
+.temp{
+font-weight: 500;
+}
+.Location{
+color: #ffbc00;
+font-weight: 400;
+font-size: 40px;
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cord div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.cord div span{
+  font-size: 14px;
+}
+.humi-per,
+.wind-per,
+.cord div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding-top: 5px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.text{
+  font-size: 20px;
+}
+.loading-message,
+.error-message,
+.city-not-found{
+  color: #888;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
