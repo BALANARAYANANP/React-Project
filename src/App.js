@@ -108,7 +108,7 @@ function App() {
       }
       useEffect  (function(){
            search();
-      },[]);
+      },[search]);
 
     return (
     <div className="container">
