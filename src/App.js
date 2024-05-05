@@ -40,7 +40,7 @@ const WeatherDetails = ({temp,city,country,lat,long, hum,wind})=>{
 
 
 function App() {
-  let api_key= "393b75b4f2c161ff615b8df9b3379c6d";
+  
   const [text,setText]= useState("ooty")
 
   const [temp,setTemp] = useState(0)
